@@ -40,12 +40,10 @@
         <ComponentName Value="fLicencia"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <CursorPos X="3" Y="37"/>
+        <CursorPos X="3" Y="36"/>
         <UsageCount Value="42"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\typhon\lcl\customdrawncontrols.pas"/>
@@ -169,15 +167,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="uPrincipal.pas"/>
-        <Caret Line="130" Column="13" TopLine="94"/>
-      </Position>
-      <Position>
-        <Filename Value="uPrincipal.pas"/>
-        <Caret Line="131" Column="15" TopLine="95"/>
-      </Position>
+    <JumpHistory HistoryIndex="27">
       <Position>
         <Filename Value="uPrincipal.pas"/>
         <Caret Line="170" Column="29" TopLine="134"/>

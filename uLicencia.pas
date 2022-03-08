@@ -12,7 +12,6 @@ type
   TfLicencia = class ( TForm )
     btnCerrar: TBitBtn;
     lblTextoGPL: TLabel;
-    Memo: TMemo;
     pnlScrool: TPanel;
     Reloj: TTimer;
     procedure btnCerrarClick(Sender: TObject);
