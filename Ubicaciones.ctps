@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="Ubicaciones.ppr"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="51"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uPrincipal.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fUbicaciones"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="338"/>
+        <CursorPos X="3" Y="338"/>
+        <UsageCount Value="51"/>
+        <Bookmarks Count="1">
+          <Item0 Y="420"/>
+        </Bookmarks>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uLicencia.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fLicencia"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <CursorPos X="3" Y="37"/>
+        <UsageCount Value="42"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\lcl\customdrawncontrols.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="CustomDrawnControls"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="812"/>
+        <CursorPos Y="835"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\components\pl_ZeosDBO\source\dbc\ZDbcSqLiteUtils.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="251"/>
+        <CursorPos Y="273"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\lcl\include\customform.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1899"/>
+        <CursorPos Y="1921"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\lcl\include\control.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="3460"/>
+        <CursorPos Y="3488"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\components\pl_FpSpreadsheet\source\common\fpspreadsheet.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="fpSpreadsheet"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2625"/>
+        <CursorPos Y="2647"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\lcl\include\application.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="211"/>
+        <CursorPos X="41" Y="244"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\fpcsrc\rtl\win\wininc\redef.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1123"/>
+        <CursorPos X="10" Y="398"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\fpcsrc\rtl\win\wininc\func.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="232"/>
+        <CursorPos X="102" Y="244"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\components\pl_FZControls\source\fzbase.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="FZBase"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1125"/>
+        <CursorPos Y="1146"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\components\pl_ZeosDBO\source\dbc\ZDbcSqLite.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="710"/>
+        <CursorPos Y="730"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\components\pl_ZeosDBO\source\component\ZDatasetParam.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1953"/>
+        <CursorPos Y="1975"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\components\pl_ZeosDBO\source\component\ZAbstractConnection.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="595"/>
+        <CursorPos Y="619"/>
+        <UsageCount Value="11"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\lcl\lclmessageglue.pas"/>
+        <FRMtype Value="0"/>
+        <UnitName Value="LCLMessageGlue"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="91"/>
+        <CursorPos Y="124"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="110" Column="25" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="130" Column="13" TopLine="94"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="131" Column="15" TopLine="95"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="170" Column="29" TopLine="134"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="172" Column="29" TopLine="136"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="210" Column="38" TopLine="186"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="221" Column="37" TopLine="186"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="330" Column="39" TopLine="294"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="367" Column="15" TopLine="331"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="440" Column="35" TopLine="404"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="40" Column="18" TopLine="18"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="110" Column="25" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="464" Column="36" TopLine="439"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="549" Column="82" TopLine="524"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="548" Column="82" TopLine="523"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="547" Column="82" TopLine="522"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="546" Column="82" TopLine="521"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="545" Column="82" TopLine="520"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="544" Column="82" TopLine="519"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="543" Column="82" TopLine="518"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="50" Column="16" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="166" Column="90" TopLine="132"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="211" Column="5" TopLine="186"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="349" Column="13" TopLine="341"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="204" TopLine="183"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="578" Column="17" TopLine="141"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="44" Column="17" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="49" Column="20" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="627" Column="45" TopLine="586"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="391" Column="3" TopLine="388"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

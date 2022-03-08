@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: tfubicaciones.btnactualizaarchivo.caption
+msgid "Actualizar"
+msgstr ""
+
+#: tfubicaciones.btnactualizar.caption
+msgid "&Actualizar"
+msgstr ""
+
+#: tfubicaciones.btnactualizar.hint
+msgid "Actualizar los libros <F2>"
+msgstr ""
+
+#: tfubicaciones.btnayuda.caption
+msgid "Ay&uda"
+msgstr ""
+
+#: tfubicaciones.btnayuda.hint
+msgid "Muestra la ayuda <F1>"
+msgstr ""
+
+#: tfubicaciones.btnbuscar.caption
+msgid "&Buscar"
+msgstr ""
+
+#: tfubicaciones.btnbuscar.hint
+msgid "Buscar un título <F5>"
+msgstr ""
+
+#: tfubicaciones.btncerrar.caption
+msgid "&Cerrar"
+msgstr ""
+
+#: tfubicaciones.btncerrar.hint
+msgid "Cerrar el programa <ESC>"
+msgstr ""
+
+#: tfubicaciones.btnprincipal.caption
+msgid "&Principal"
+msgstr ""
+
+#: tfubicaciones.btnprincipal.hint
+msgid "Datos de un libro"
+msgstr ""
+
+#: tfubicaciones.caption
+msgid "Ubicaciones 3.6"
+msgstr ""
+
+#: tfubicaciones.lblautor.caption
+msgid "Autor"
+msgstr ""
+
+#: tfubicaciones.lblcantidad.caption
+msgid "Cantidad"
+msgstr ""
+
+#: tfubicaciones.lblfechaarchivo.caption
+msgid "Fecha del archivo"
+msgstr ""
+
+#: tfubicaciones.lblisbn.caption
+msgctxt "tfubicaciones.lblisbn.caption"
+msgid "ISBN"
+msgstr ""
+
+#: tfubicaciones.lbllicenciagnu.caption
+msgid "Licencia GNU 2.0"
+msgstr ""
+
+#: tfubicaciones.lblprogreso.caption
+msgid "Progreso"
+msgstr ""
+
+#: tfubicaciones.lbltitulo.caption
+msgctxt "tfubicaciones.lbltitulo.caption"
+msgid "Título"
+msgstr ""
+
+#: tfubicaciones.lbltitulobuscar.caption
+msgid "Título (o autor) a buscar"
+msgstr ""
+
+#: tfubicaciones.lblubicacion.caption
+msgctxt "tfubicaciones.lblubicacion.caption"
+msgid "Ubicación"
+msgstr ""
+
+#: tfubicaciones.paginas.caption
+msgid "Paginas"
+msgstr ""
+
+#: tfubicaciones.rejilla.columns[0].title.caption
+msgctxt "tfubicaciones.rejilla.columns[0].title.caption"
+msgid "ISBN"
+msgstr ""
+
+#: tfubicaciones.rejilla.columns[1].title.caption
+msgctxt "tfubicaciones.rejilla.columns[1].title.caption"
+msgid "Título"
+msgstr ""
+
+#: tfubicaciones.rejilla.columns[2].title.caption
+msgctxt "tfubicaciones.rejilla.columns[2].title.caption"
+msgid "Ubicación"
+msgstr ""
+
+#: tfubicaciones.rejilla.columns[3].title.caption
+msgid "Stock"
+msgstr ""
+
+#: uprincipal.actualizarbase
+msgid "La base de datos podría no estar actualizada"
+msgstr ""
+
+#: uprincipal.closemessage
+msgid "Closing your app... bye bye!"
+msgstr ""
+
+#: uprincipal.erroralconectar
+msgid "Error al conectar"
+msgstr ""
+
+#: uprincipal.greetmessage
+#, object-pascal-format
+msgid "Hey %0:s from %1:s country!"
+msgstr ""
+
+#: uprincipal.hellomessage
+msgid "Hello World!"
+msgstr ""
+
+#: uprincipal.modificados
+msgid " registros modificados"
+msgstr ""
+
+#: uprincipal.procesados
+msgid " registros procesados"
+msgstr ""
+
+#: uprincipal.psactualizarbase
+msgid "Por favor, actualiza la base de datos de libros"
+msgstr ""
+

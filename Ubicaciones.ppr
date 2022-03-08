@@ -1,0 +1,22 @@
+program Ubicaciones;
+
+{$mode objfpc}{$H+}
+
+uses
+      {$IFDEF UNIX}
+      cthreads,
+      {$ENDIF}
+      Interfaces, // this includes the CT adLCL widgetset
+      Forms, uPrincipal, uLicencia
+      { you can add units after this };
+
+{$R *.res}
+
+begin
+      RequireDerivedFormResource := True;
+  Application.Scaled:=True;
+      Application.Initialize;
+      Application.CreateForm ( TfUbicaciones, fUbicaciones ) ;
+      Application.Run;
+end.
+

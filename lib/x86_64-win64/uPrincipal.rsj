@@ -1,0 +1,10 @@
+{"version":1,"strings":[
+{"hash":21676401,"name":"uprincipal.hellomessage","sourcebytes":[72,101,108,108,111,32,87,111,114,108,100,33],"value":"Hello World!"},
+{"hash":10732849,"name":"uprincipal.closemessage","sourcebytes":[67,108,111,115,105,110,103,32,121,111,117,114,32,97,112,112,46,46,46,32,98,121,101,32,98,121,101,33],"value":"Closing your app... bye bye!"},
+{"hash":59064193,"name":"uprincipal.greetmessage","sourcebytes":[72,101,121,32,37,48,58,115,32,102,114,111,109,32,37,49,58,115,32,99,111,117,110,116,114,121,33],"value":"Hey %0:s from %1:s country!"},
+{"hash":39856770,"name":"uprincipal.erroralconectar","sourcebytes":[69,114,114,111,114,32,97,108,32,99,111,110,101,99,116,97,114],"value":"Error al conectar"},
+{"hash":129116561,"name":"uprincipal.actualizarbase","sourcebytes":[76,97,32,98,97,115,101,32,100,101,32,100,97,116,111,115,32,112,111,100,114,195,173,97,32,110,111,32,101,115,116,97,114,32,97,99,116,117,97,108,105,122,97,100,97],"value":"La base de datos podr\u00C3\u00ADa no estar actualizada"},
+{"hash":36936643,"name":"uprincipal.psactualizarbase","sourcebytes":[80,111,114,32,102,97,118,111,114,44,32,97,99,116,117,97,108,105,122,97,32,108,97,32,98,97,115,101,32,100,101,32,100,97,116,111,115,32,100,101,32,108,105,98,114,111,115],"value":"Por favor, actualiza la base de datos de libros"},
+{"hash":75403299,"name":"uprincipal.procesados","sourcebytes":[32,114,101,103,105,115,116,114,111,115,32,112,114,111,99,101,115,97,100,111,115],"value":" registros procesados"},
+{"hash":126214723,"name":"uprincipal.modificados","sourcebytes":[32,114,101,103,105,115,116,114,111,115,32,109,111,100,105,102,105,99,97,100,111,115],"value":" registros modificados"}
+]}
