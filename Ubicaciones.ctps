@@ -25,7 +25,7 @@
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="338"/>
-        <CursorPos X="3" Y="338"/>
+        <CursorPos X="3" Y="367"/>
         <UsageCount Value="51"/>
         <Bookmarks Count="1">
           <Item0 Y="420"/>
@@ -170,10 +170,6 @@
     <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="uPrincipal.pas"/>
-        <Caret Line="110" Column="25" TopLine="75"/>
-      </Position>
-      <Position>
-        <Filename Value="uPrincipal.pas"/>
         <Caret Line="130" Column="13" TopLine="94"/>
       </Position>
       <Position>
@@ -287,6 +283,10 @@
       <Position>
         <Filename Value="uPrincipal.pas"/>
         <Caret Line="391" Column="3" TopLine="388"/>
+      </Position>
+      <Position>
+        <Filename Value="uPrincipal.pas"/>
+        <Caret Line="338" Column="3" TopLine="338"/>
       </Position>
     </JumpHistory>
     <RunParams>
