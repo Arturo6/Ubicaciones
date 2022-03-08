@@ -24,5 +24,5 @@
 {"hash":193432114,"name":"tfubicaciones.btnactualizaarchivo.caption","sourcebytes":[65,99,116,117,97,108,105,122,97,114],"value":"Actualizar"},
 {"hash":196081487,"name":"tfubicaciones.lblfechaarchivo.caption","sourcebytes":[70,101,99,104,97,32,100,101,108,32,97,114,99,104,105,118,111],"value":"Fecha del archivo"},
 {"hash":157190639,"name":"tfubicaciones.lblprogreso.caption","sourcebytes":[80,114,111,103,114,101,115,111],"value":"Progreso"},
-{"hash":142338496,"name":"tfubicaciones.lbllicenciagnu.caption","sourcebytes":[76,105,99,101,110,99,105,97,32,71,78,85,32,50,46,48],"value":"Licencia GNU 2.0"}
+{"hash":142338752,"name":"tfubicaciones.lbllicenciagnu.caption","sourcebytes":[76,105,99,101,110,99,105,97,32,71,78,85,32,51,46,48],"value":"Licencia GNU 3.0"}
 ]}

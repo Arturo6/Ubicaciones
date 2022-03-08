@@ -23,7 +23,7 @@
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="3"/>
       <RevisionNr Value="1"/>
-      <BuildNr Value="29"/>
+      <BuildNr Value="30"/>
       <Language Value="040A"/>
       <StringTable CompanyName="AMSoftware"/>
     </VersionInfo>

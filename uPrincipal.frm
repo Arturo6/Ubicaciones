@@ -3814,7 +3814,7 @@ object fUbicaciones: TfUbicaciones
         Height = 15
         Top = 448
         Width = 94
-        Caption = 'Licencia GNU 2.0'
+        Caption = 'Licencia GNU 3.0'
         Font.CharSet = ANSI_CHARSET
         Font.Color = clBlue
         Font.Height = -12
