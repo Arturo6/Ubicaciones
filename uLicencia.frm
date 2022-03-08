@@ -5,7 +5,7 @@ object fLicencia: TfLicencia
   Width = 552
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Licencia GNU 2.0'
+  Caption = 'Licencia GNU 3.0'
   ClientHeight = 423
   ClientWidth = 552
   Icon.Data = {
