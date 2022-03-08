@@ -12,7 +12,7 @@ msgstr ""
 
 #: tflicencia.caption
 msgctxt "tflicencia.caption"
-msgid "Licencia GNU 2.0"
+msgid "Licencia GNU 3.0"
 msgstr ""
 
 #: tflicencia.lbltextogpl.caption
