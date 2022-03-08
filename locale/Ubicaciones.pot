@@ -168,7 +168,7 @@ msgstr ""
 
 #: tfubicaciones.lbllicenciagnu.caption
 msgctxt "tfubicaciones.lbllicenciagnu.caption"
-msgid "Licencia GNU 2.0"
+msgid "Licencia GNU 3.0"
 msgstr ""
 
 #: tfubicaciones.lblprogreso.caption
