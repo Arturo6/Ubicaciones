@@ -7,8 +7,7 @@ uses
       cthreads,
       {$ENDIF}
       Interfaces, // this includes the CT adLCL widgetset
-      Forms, uPrincipal, uLicencia
-      { you can add units after this };
+      Forms, uPrincipal, uLicencia, uActualizar;
 
 {$R *.res}
 
@@ -16,7 +15,7 @@ begin
       RequireDerivedFormResource := True;
   Application.Scaled:=True;
       Application.Initialize;
-      Application.CreateForm ( TfUbicaciones, fUbicaciones ) ;
+      Application.CreateForm(TfUbicaciones, fUbicaciones);
       Application.Run;
 end.
 

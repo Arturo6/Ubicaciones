@@ -10,6 +10,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.1\n"
 
+#: tfactualizar.caption
+msgid "Actualizando"
+msgstr ""
+
+#: tfactualizar.lblactualizar.caption
+msgid "Actualizando las bases de datos"
+msgstr ""
+
+#: tfactualizar.lblesperar.caption
+msgid "Por favor, espera un momento"
+msgstr ""
+
 #: tflicencia.caption
 msgctxt "tflicencia.caption"
 msgid "Licencia GNU 3.0"
@@ -101,18 +113,6 @@ msgid ""
 "\"recipients\" may be indivi"
 msgstr ""
 
-#: tfubicaciones.btnactualizaarchivo.caption
-msgid "Actualizar"
-msgstr ""
-
-#: tfubicaciones.btnactualizar.caption
-msgid "&Actualizar"
-msgstr ""
-
-#: tfubicaciones.btnactualizar.hint
-msgid "Actualizar los libros <F2>"
-msgstr ""
-
 #: tfubicaciones.btnayuda.caption
 msgid "Ay&uda"
 msgstr ""
@@ -146,7 +146,7 @@ msgid "Datos de un libro"
 msgstr ""
 
 #: tfubicaciones.caption
-msgid "Ubicaciones 3.6"
+msgid "Ubicaciones 4.0"
 msgstr ""
 
 #: tfubicaciones.lblautor.caption
@@ -155,10 +155,6 @@ msgstr ""
 
 #: tfubicaciones.lblcantidad.caption
 msgid "Cantidad"
-msgstr ""
-
-#: tfubicaciones.lblfechaarchivo.caption
-msgid "Fecha del archivo"
 msgstr ""
 
 #: tfubicaciones.lblisbn.caption
@@ -171,22 +167,26 @@ msgctxt "tfubicaciones.lbllicenciagnu.caption"
 msgid "Licencia GNU 3.0"
 msgstr ""
 
-#: tfubicaciones.lblprogreso.caption
-msgid "Progreso"
-msgstr ""
-
 #: tfubicaciones.lbltitulo.caption
 msgctxt "tfubicaciones.lbltitulo.caption"
 msgid "Título"
 msgstr ""
 
 #: tfubicaciones.lbltitulobuscar.caption
-msgid "Título (o autor) a buscar"
+msgid "Título (autor, anteceder con guión) a buscar"
 msgstr ""
 
 #: tfubicaciones.lblubicacion.caption
 msgctxt "tfubicaciones.lblubicacion.caption"
 msgid "Ubicación"
+msgstr ""
+
+#: tfubicaciones.logopublicaciones.hint
+msgid "www.ua.es"
+msgstr ""
+
+#: tfubicaciones.logopublicaciones1.hint
+msgid "publicaciones.ua.es"
 msgstr ""
 
 #: tfubicaciones.paginas.caption
@@ -216,21 +216,8 @@ msgstr ""
 msgid "La base de datos podría no estar actualizada"
 msgstr ""
 
-#: uprincipal.closemessage
-msgid "Closing your app... bye bye!"
-msgstr ""
-
 #: uprincipal.erroralconectar
-msgid "Error al conectar"
-msgstr ""
-
-#: uprincipal.greetmessage
-#, object-pascal-format
-msgid "Hey %0:s from %1:s country!"
-msgstr ""
-
-#: uprincipal.hellomessage
-msgid "Hello World!"
+msgid "Error al conectar la base de datos"
 msgstr ""
 
 #: uprincipal.modificados

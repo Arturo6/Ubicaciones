@@ -1,9 +1,7 @@
 {"version":1,"strings":[
-{"hash":189985270,"name":"tfubicaciones.caption","sourcebytes":[85,98,105,99,97,99,105,111,110,101,115,32,51,46,54],"value":"Ubicaciones 3.6"},
+{"hash":189986032,"name":"tfubicaciones.caption","sourcebytes":[85,98,105,99,97,99,105,111,110,101,115,32,52,46,48],"value":"Ubicaciones 4.0"},
 {"hash":178871982,"name":"tfubicaciones.btncerrar.hint","sourcebytes":[67,101,114,114,97,114,32,101,108,32,112,114,111,103,114,97,109,97,32,60,69,83,67,62],"value":"Cerrar el programa <ESC>"},
 {"hash":178034850,"name":"tfubicaciones.btncerrar.caption","sourcebytes":[38,67,101,114,114,97,114],"value":"&Cerrar"},
-{"hash":155125294,"name":"tfubicaciones.btnactualizar.hint","sourcebytes":[65,99,116,117,97,108,105,122,97,114,32,108,111,115,32,108,105,98,114,111,115,32,60,70,50,62],"value":"Actualizar los libros <F2>"},
-{"hash":191466034,"name":"tfubicaciones.btnactualizar.caption","sourcebytes":[38,65,99,116,117,97,108,105,122,97,114],"value":"&Actualizar"},
 {"hash":245279422,"name":"tfubicaciones.btnbuscar.hint","sourcebytes":[66,117,115,99,97,114,32,117,110,32,116,195,173,116,117,108,111,32,60,70,53,62],"value":"Buscar un t\u00EDtulo <F5>"},
 {"hash":178035106,"name":"tfubicaciones.btnbuscar.caption","sourcebytes":[38,66,117,115,99,97,114],"value":"&Buscar"},
 {"hash":89261423,"name":"tfubicaciones.btnprincipal.hint","sourcebytes":[68,97,116,111,115,32,100,101,32,117,110,32,108,105,98,114,111],"value":"Datos de un libro"},
@@ -20,9 +18,8 @@
 {"hash":14990415,"name":"tfubicaciones.rejilla.columns[1].title.caption","sourcebytes":[84,195,173,116,117,108,111],"value":"T\u00EDtulo"},
 {"hash":159245934,"name":"tfubicaciones.rejilla.columns[2].title.caption","sourcebytes":[85,98,105,99,97,99,105,195,179,110],"value":"Ubicaci\u00F3n"},
 {"hash":5944731,"name":"tfubicaciones.rejilla.columns[3].title.caption","sourcebytes":[83,116,111,99,107],"value":"Stock"},
-{"hash":21135970,"name":"tfubicaciones.lbltitulobuscar.caption","sourcebytes":[84,195,173,116,117,108,111,32,40,111,32,97,117,116,111,114,41,32,97,32,98,117,115,99,97,114],"value":"T\u00EDtulo (o autor) a buscar"},
-{"hash":193432114,"name":"tfubicaciones.btnactualizaarchivo.caption","sourcebytes":[65,99,116,117,97,108,105,122,97,114],"value":"Actualizar"},
-{"hash":196081487,"name":"tfubicaciones.lblfechaarchivo.caption","sourcebytes":[70,101,99,104,97,32,100,101,108,32,97,114,99,104,105,118,111],"value":"Fecha del archivo"},
-{"hash":157190639,"name":"tfubicaciones.lblprogreso.caption","sourcebytes":[80,114,111,103,114,101,115,111],"value":"Progreso"},
-{"hash":142338752,"name":"tfubicaciones.lbllicenciagnu.caption","sourcebytes":[76,105,99,101,110,99,105,97,32,71,78,85,32,51,46,48],"value":"Licencia GNU 3.0"}
+{"hash":79909042,"name":"tfubicaciones.lbltitulobuscar.caption","sourcebytes":[84,195,173,116,117,108,111,32,40,97,117,116,111,114,44,32,97,110,116,101,99,101,100,101,114,32,99,111,110,32,103,117,105,195,179,110,41,32,97,32,98,117,115,99,97,114],"value":"T\u00EDtulo (autor, anteceder con gui\u00F3n) a buscar"},
+{"hash":142338752,"name":"tfubicaciones.lbllicenciagnu.caption","sourcebytes":[76,105,99,101,110,99,105,97,32,71,78,85,32,51,46,48],"value":"Licencia GNU 3.0"},
+{"hash":173759011,"name":"tfubicaciones.logopublicaciones.hint","sourcebytes":[119,119,119,46,117,97,46,101,115],"value":"www.ua.es"},
+{"hash":108842979,"name":"tfubicaciones.logopublicaciones1.hint","sourcebytes":[112,117,98,108,105,99,97,99,105,111,110,101,115,46,117,97,46,101,115],"value":"publicaciones.ua.es"}
 ]}

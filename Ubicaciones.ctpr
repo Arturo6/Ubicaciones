@@ -21,9 +21,9 @@
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
-      <MajorVersionNr Value="3"/>
+      <MajorVersionNr Value="4"/>
       <RevisionNr Value="1"/>
-      <BuildNr Value="34"/>
+      <BuildNr Value="70"/>
       <Language Value="040A"/>
       <StringTable CompanyName="AMSoftware"/>
     </VersionInfo>
@@ -38,6 +38,12 @@
       <FormatVersion Value="2"/>
     </RunParams>
     <RequiredPackages>
+      <Item>
+        <PackageName Value="pl_SynapseVS"/>
+      </Item>
+      <Item>
+        <PackageName Value="pl_Indy"/>
+      </Item>
       <Item>
         <PackageName Value="pl_LuiControls"/>
       </Item>
@@ -79,6 +85,14 @@
         <FRMtype Value="200"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="fLicencia"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uActualizar.pas"/>
+        <FRMtype Value="0"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="fActualizar"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
