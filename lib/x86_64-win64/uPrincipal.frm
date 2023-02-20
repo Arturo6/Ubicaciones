@@ -2755,7 +2755,7 @@ object fUbicaciones: TfUbicaciones
     Align = alClient
     TabStop = True
     TabOrder = 1
-    ActivePage = tsPrincipal
+    ActivePage = tsBuscar
     MenuAppearance.Border.Normal.Color = clBlack
     MenuAppearance.Border.Normal.Width = 0
     MenuAppearance.Border.Normal.Option = [mboTop, mboLeft, mboBottom, mboRight]
@@ -2818,6 +2818,7 @@ object fUbicaciones: TfUbicaciones
       Appearance.Color.HotTrack = False
       Appearance.Font.HotTrack = False
       Align = alClient
+      Visible = False
       TabOrder = 1
       object lblISBN: TLabel
         Left = 13
@@ -3355,7 +3356,6 @@ object fUbicaciones: TfUbicaciones
       Appearance.Color.HotTrack = False
       Appearance.Font.HotTrack = False
       Align = alClient
-      Visible = False
       TabOrder = 2
       object Rejilla: TDBGrid
         Left = 13

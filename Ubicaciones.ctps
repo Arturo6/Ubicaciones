@@ -12,7 +12,7 @@
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <CursorPos Y="21"/>
-        <UsageCount Value="79"/>
+        <UsageCount Value="82"/>
       </Unit>
       <Unit>
         <Filename Value="uPrincipal.pas"/>
@@ -24,9 +24,9 @@
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="222"/>
-        <CursorPos X="3" Y="255"/>
-        <UsageCount Value="79"/>
+        <TopLine Value="267"/>
+        <CursorPos X="27" Y="285"/>
+        <UsageCount Value="82"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -39,8 +39,9 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <CursorPos X="3" Y="36"/>
-        <UsageCount Value="70"/>
+        <TopLine Value="5"/>
+        <CursorPos X="44" Y="39"/>
+        <UsageCount Value="23"/>
       </Unit>
       <Unit>
         <Filename Value="uActualizar.pas"/>
@@ -52,8 +53,8 @@
         <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="94"/>
-        <CursorPos X="129" Y="144"/>
-        <UsageCount Value="45"/>
+        <CursorPos X="14" Y="102"/>
+        <UsageCount Value="48"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -93,8 +94,8 @@
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="2979"/>
-        <CursorPos Y="3012"/>
+        <TopLine Value="3011"/>
+        <CursorPos Y="3044"/>
         <UsageCount Value="10"/>
       </Unit>
       <Unit>
@@ -114,7 +115,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="2625"/>
         <CursorPos Y="2647"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\typhon\lcl\include\application.inc"/>
@@ -186,9 +187,9 @@
         <UnitName Value="LCLMessageGlue"/>
         <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="91"/>
-        <CursorPos Y="124"/>
-        <UsageCount Value="7"/>
+        <TopLine Value="97"/>
+        <CursorPos Y="131"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\typhon\lcl\dialogs.pp"/>
@@ -219,18 +220,6 @@
         <UsageCount Value="8"/>
       </Unit>
       <Unit>
-        <Filename Value="..\Ubicaciones\uLicencia.pas"/>
-        <FRMtype Value="0"/>
-        <ComponentName Value="fLicencia"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="5"/>
-        <CursorPos X="44" Y="39"/>
-        <UsageCount Value="9"/>
-      </Unit>
-      <Unit>
         <Filename Value="C:\codetyphon\typhon\lcl\include\messagedialogs.inc"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
@@ -239,43 +228,76 @@
         <CursorPos Y="130"/>
         <UsageCount Value="9"/>
       </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\lcl\interfaces\win32\win32callback.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="2702"/>
+        <CursorPos Y="2730"/>
+        <UsageCount Value="10"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="8">
+    <JumpHistory HistoryIndex="14">
       <Position>
         <Filename Value="uPrincipal.pas"/>
-        <Caret Line="389" Column="7" TopLine="362"/>
+        <Caret Line="311" TopLine="291"/>
       </Position>
       <Position>
         <Filename Value="uPrincipal.pas"/>
-        <Caret Line="394" TopLine="374"/>
-      </Position>
-      <Position>
-        <Filename Value="uPrincipal.pas"/>
-        <Caret Line="389" Column="16" TopLine="371"/>
+        <Caret Line="312" TopLine="291"/>
       </Position>
       <Position>
         <Filename Value="uActualizar.pas"/>
-        <Caret Line="144" Column="129" TopLine="109"/>
+        <Caret Line="116" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="117" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="102" Column="70" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="106" Column="58" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="96" Column="17" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="102" Column="85" TopLine="92"/>
       </Position>
       <Position>
         <Filename Value="uPrincipal.pas"/>
-        <Caret Line="107" Column="18" TopLine="74"/>
+        <Caret Line="312" TopLine="291"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="97" Column="42" TopLine="83"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="94" Column="56" TopLine="83"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="96" Column="17" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="99" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="uActualizar.pas"/>
+        <Caret Line="82" Column="22" TopLine="76"/>
       </Position>
       <Position>
         <Filename Value="uPrincipal.pas"/>
-        <Caret Line="244" Column="98" TopLine="224"/>
-      </Position>
-      <Position>
-        <Filename Value="uPrincipal.pas"/>
-        <Caret Line="191" Column="3" TopLine="188"/>
-      </Position>
-      <Position>
-        <Filename Value="uPrincipal.pas"/>
-        <Caret Line="263" Column="38" TopLine="239"/>
-      </Position>
-      <Position>
-        <Filename Value="uPrincipal.pas"/>
-        <Caret Line="53" Column="12" TopLine="32"/>
+        <Caret Line="256" Column="136" TopLine="235"/>
       </Position>
     </JumpHistory>
     <RunParams>

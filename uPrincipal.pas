@@ -253,7 +253,7 @@ begin
     else
       lblCantidadDB.Caption := IntToStr( Query.FieldByName('cantidad').AsInteger ) + ' unidades';
 //    lblPrecioDB.Caption := FormatFloat ('###,##0.00 €;-###,##0.00 €;0', StrToFloat( Query.FieldByName('precio').AsString ) / 10000 );
-    lblPrecioDB.Caption := FormatFloat ('###,##0.00 €;-###,##0.00 €;0', StrToFloat( Query.FieldByName('precio').AsString ) );
+    lblPrecioDB.Caption := FormatFloat ('###,##0.00 €;-###,##0.00 €;0', StrToFloat( Query.FieldByName('precio').AsString ) / 10000 );
 
     // Muestra la portada del libro
     BuscaPortada( edtISBN.Text );
@@ -278,6 +278,13 @@ begin
       // Prepara la búsqueda del isbn
       Query.Active := False;
       Query.SQL.Text := 'SELECT * FROM libros WHERE titulo LIKE ' + quotedstr( '%' + edtTitulo.Text + '%' ) + ';';
+      Query.Open;
+    end;
+
+    // Se muestran todos los libros
+    if edtTitulo.Text = '*' then begin
+      Query.Active := False;
+      Query.SQL.Text := 'SELECT * FROM libros ORDER BY titulo';
       Query.Open;
     end;
 end;

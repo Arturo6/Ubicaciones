@@ -93,13 +93,12 @@ begin
     // Prepara la inserción del registro
 
     // Empieza en la línea 1 para saltar el encabezado de las columnas
-    for row := 1 to MyWorksheet.GetLastRowIndex do begin
+    for row := 0 to MyWorksheet.GetLastRowIndex do begin
       // Prepara los campos del registro
       // La primera columna es la 0
       cell := MyWorksheet.FindCell( row, 0 ); // ISBN
       // Elimina los guiones del ISBN
       fUbicaciones.Query.Params.ParamByName('isbn1').AsString := StringReplace( MyWorksheet.ReadAsText( cell ), '"', '', [rfReplaceAll] );
-
 
       cell := MyWorksheet.FindCell( row, 1 ); // TÍTULO
       fUbicaciones.Query.Params.ParamByName('titulo1').AsString := MyWorksheet.ReadAsText( cell );
