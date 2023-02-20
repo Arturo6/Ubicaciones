@@ -7,6 +7,7 @@ object fMensaje: TfMensaje
   BorderStyle = bsNone
   ClientHeight = 50
   ClientWidth = 393
+  FormStyle = fsStayOnTop
   Position = poScreenCenter
   LCLVersion = '7.5'
   object Panel: TPanel

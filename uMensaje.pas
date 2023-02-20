@@ -1,22 +1,10 @@
 {
-  uMensaje: unidad que muestra un mensaje en pantalla durante un tiempo especificado.
+  Unidad que muestra un mensaje en pantalla durante un tiempo especificado.
 
-  Versión: 0.1 17/05/2022
+  17/05/2022 10:02:52
+
   Copyright (C) 2022 <Arturo Molina> <amolinaj@gmx.es>
 
-  Parámetros:
-    Mensaje = Mensaje a mostrar en la ventana
-	Tiempo  = Tiempo en segundo que permanece en pantalla
-	
-  Uso:
-    - Agregar la unidad a la cláusula uses de proyecto
-	- Agregar una variable del tipo ventana:TfMensaje en la sección var del formulario principal
-	- Crear una variable general del tipo TfMensaje en el evento Create de la aplicación
-	  ventana := TfMensaje.Create( Application );
-
-  Ejemplo:
-    ventana.Mensaje( 'Saludos', 5 );  
-	
   Este código es software libre; puede redistribuirlo y/o modificarlo bajo los términos de la
   licencia publicada por la Free Software Foundation; ya sea la versión 3 o cualquier versión posterior.
 
@@ -45,9 +33,12 @@ type
   TfMensaje = class(TForm)
     Panel: TPanel;
     Reloj: TTimer;
-    procedure RelojTimer( Sender: TObject );
+    procedure FormShow(Sender: TObject);
+    procedure RelojTimer(Sender: TObject);
+  private
+
   public
-    procedure Mensaje( sMensaje: string; Tiempo: integer );
+
   end;
 
 var
@@ -59,12 +50,8 @@ implementation
 
 { TfMensaje }
 
-procedure TfMensaje.Mensaje( sMensaje: string; Tiempo: integer );
+procedure TfMensaje.FormShow(Sender: TObject);
 begin
-  fMensaje.Width := Length( sMensaje ) * 10;
-  Panel.Caption  := sMensaje;
-  Reloj.Interval := Tiempo * 1000;
-
   Reloj.Enabled := true;
 end;
 

@@ -29,7 +29,7 @@ uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, ComCtrls,
   windows, Buttons, StdCtrls, RichMemo, FZCommon, FZBase, ZDataset, ZConnection,
   Grids, DBGrids, LCLType, LCLIntf, DateUtils, DefaultTranslator, UniqueInstance,
-  uLicencia, uActualizar, IniFiles, pingsend;
+  uLicencia, uActualizar, IniFiles;
 
 type
 
@@ -39,9 +39,13 @@ type
     btnAyuda: TSpeedButton;
     btnBuscar: TSpeedButton;
     btnPrincipal: TSpeedButton;
+    lblPrecio: TLabel;
+    lblPrecioDB: TLabel;
     lblLicenciaGNU: TLabel;
     lblAutor: TLabel;
     lblAutorDB: TLabel;
+    lblSubitulo: TLabel;
+    lblSubtituloDB: TLabel;
     LogoPublicaciones: TImage;
     Abrir: TOpenDialog;
     LogoPublicaciones1: TImage;
@@ -116,8 +120,18 @@ procedure TfUbicaciones.FormCreate ( Sender: TObject ) ;
 begin
   if not FileExists( ExtractFilePath( Application.ExeName ) + 'lista.db' ) then
     if not CrearBaseDatos( ExtractFilePath( Application.ExeName ) + 'lista.db' ) then begin
-      MessageDlg('Hubo un error al crear la base de datos', mtError, [mbOk], 0);
+      MessageDlg('Hubo un error al crear la base de datos'+LineEnding+'', mtError, [],0 );
       Close;
+    end else begin
+      // Muestra la pantalla de actualizar
+      with TfActualizar.Create(nil) do
+        try
+          ShowModal
+        finally
+          Free
+        end;
+
+      MessageDlg('Base de datos actualizada'+LineEnding+'', mtInformation, [],0 );
     end;
 
   // Conecta con la base de datos
@@ -126,7 +140,7 @@ begin
   Try
     Conexion.Connected := true;
   except
-    MessageDlg( ErrorAlConectar, mtError, [mbOK],0);
+    MessageDlg( ErrorAlConectar+LineEnding+'', mtError, [],0 );
     Application.Terminate;
   end;
 end;
@@ -136,25 +150,12 @@ var
   Mydir: String;
   FileTime1, FileTime2: TDateTime;
   FicheroINI: TIniFile;
-  PingSend: TPINGSend;
 begin
   FicheroINI := TiniFile.Create( ChangeFileExt( Application.ExeName, '.ini' ) );
   // Muestra la página principal
   Paginas.ActivePage := tsPrincipal;
   // Y entrega el foco al ISBN
   edtISBN.SetFocus;
-
-  // Verifica que haya conexión con ARCHIVO
-  PingSend := TPINGSend.Create;
-  try
-    PingSend.Timeout := 750;
-    if not PingSend.Ping('172.16.204.63') then begin
-      ShowMessage( 'El servidos ARCHIVO está desconectado, consulta con el almacén (ext. 3344)' );
-      Close;
-    end;
-  finally
-       PingSend.Free;
-  end;
 
   // Busca la ubicacion del archivo de excel con la lista de libros
   if FicheroINI.ReadString( 'Archivos', 'Lista', '' ) = '' then begin
@@ -169,7 +170,6 @@ begin
     end;
   end else
       MyDir := FicheroINI.ReadString( 'Archivos', 'Lista', '' );
-
 //  MyDir := '\\172.16.204.63\Archivo\Lista.xls';
   if GetFileTime( MyDir, FileTime1 ) then begin
     GetFileTime( ExtractFilePath( Application.ExeName ) + 'lista.db', FileTime2 );
@@ -178,7 +178,8 @@ begin
          // Muestra la pantalla de actualizar
          with TfActualizar.Create(nil) do
            try
-             ShowModal
+             ShowModal;
+             MessageDlg('Base de datos actualizada'+LineEnding+'', mtInformation, [],0 );
            finally
              Free
            end
@@ -244,13 +245,20 @@ begin
     lblAutorDB.Hint := lblAutorDB.Caption;
     lblTituloDB.Caption := Query.FieldByName('titulo').AsString;
     lblTituloDB.Hint := lblTituloDB.Caption;
+    lblSubtituloDB.Caption := Query.FieldByName('subtitulo').AsString;
+    lblSubtituloDB.Hint := lblSubtituloDB.Caption;
     lblUbicacionDB.Caption := Query.FieldByName('ubicacion').AsString;
-    lblCantidadDB.Caption := IntToStr( Query.FieldByName('cantidad').AsInteger );
+    if Query.FieldByName('cantidad').AsInteger = 1 then
+      lblCantidadDB.Caption := IntToStr( Query.FieldByName('cantidad').AsInteger ) + ' unidad'
+    else
+      lblCantidadDB.Caption := IntToStr( Query.FieldByName('cantidad').AsInteger ) + ' unidades';
+//    lblPrecioDB.Caption := FormatFloat ('###,##0.00 €;-###,##0.00 €;0', StrToFloat( Query.FieldByName('precio').AsString ) / 10000 );
+    lblPrecioDB.Caption := FormatFloat ('###,##0.00 €;-###,##0.00 €;0', StrToFloat( Query.FieldByName('precio').AsString ) );
 
     // Muestra la portada del libro
     BuscaPortada( edtISBN.Text );
   end else
-    MessageDlg('Ese ISBN no está en la base de datos', mtInformation, [mbOK],0);
+    MessageDlg('Ese ISBN no está en la base de datos'+LineEnding+'', mtInformation, [],0 );
 end;
 
   // Toma el foco de nuevo
@@ -294,7 +302,7 @@ begin
     Paginas.ActivePage := tsAyuda;
 
   // Se ha pulsado F2, se actualizan las bases de datos
-  if Key = VK_F2 then
+  if Key = VK_F2 then begin
     // Muestra la pantalla de actualizar
     with TfActualizar.Create(nil) do
       try
@@ -302,6 +310,9 @@ begin
       finally
         Free
       end;
+
+    MessageDlg('Base de datos actualizada'+LineEnding+'', mtInformation, [],0 );
+  end;
 end;
 
 procedure TfUbicaciones.RejillaPrepareCanvas ( sender: TObject; DataCol: Integer; Column: TColumn; AState: TGridDrawState ) ;
@@ -445,11 +456,11 @@ begin
     if fUbicaciones.Query.Active then
       fUbicaciones.Query.Close;
     fUbicaciones.Query.SQL.Clear;
-    fUbicaciones.Query.SQL.Text := 'CREATE TABLE libros (isbn	TEXT(13) NOT NULL, autor TEXT(1024), titulo	TEXT(2048) NOT NULL, ubicacion	TEXT(3) NOT NULL, cantidad	INTEGER NOT NULL )';
+    fUbicaciones.Query.SQL.Text := 'CREATE TABLE libros (isbn	TEXT(13) NOT NULL, titulo	TEXT(2048) NOT NULL, subtitulo	TEXT(2048) NOT NULL, autor TEXT(1024), ubicacion	TEXT(3) NOT NULL, cantidad	INTEGER NOT NULL, precio VARCHAR NOT NULL )';
     fUbicaciones.Query.ExecSQL;
     Result := true;
   except
-    MessageDlg( ErrorAlConectar, mtError, [mbOK],0);
+    MessageDlg( ErrorAlConectar + LineEnding+'', mtError, [],0 );
     Application.Terminate;
   end;
 

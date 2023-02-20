@@ -5,7 +5,7 @@ object fUbicaciones: TfUbicaciones
   Width = 931
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'Ubicaciones 4.0'
+  Caption = 'Ubicaciones 4.1'
   ClientHeight = 502
   ClientWidth = 931
   Icon.Data = {
@@ -2755,7 +2755,7 @@ object fUbicaciones: TfUbicaciones
     Align = alClient
     TabStop = True
     TabOrder = 1
-    ActivePage = tsBuscar
+    ActivePage = tsPrincipal
     MenuAppearance.Border.Normal.Color = clBlack
     MenuAppearance.Border.Normal.Width = 0
     MenuAppearance.Border.Normal.Option = [mboTop, mboLeft, mboBottom, mboRight]
@@ -2818,12 +2818,11 @@ object fUbicaciones: TfUbicaciones
       Appearance.Color.HotTrack = False
       Appearance.Font.HotTrack = False
       Align = alClient
-      Visible = False
       TabOrder = 1
       object lblISBN: TLabel
         Left = 13
         Height = 15
-        Top = 13
+        Top = 10
         Width = 25
         Caption = 'ISBN'
         ParentFont = False
@@ -2831,7 +2830,7 @@ object fUbicaciones: TfUbicaciones
       object lblTitulo: TLabel
         Left = 13
         Height = 15
-        Top = 168
+        Top = 82
         Width = 30
         Caption = 'Título'
         ParentFont = False
@@ -2839,7 +2838,7 @@ object fUbicaciones: TfUbicaciones
       object lblTituloDB: TLabel
         Left = 13
         Height = 33
-        Top = 185
+        Top = 103
         Width = 571
         AutoSize = False
         Font.Height = -24
@@ -2850,8 +2849,8 @@ object fUbicaciones: TfUbicaciones
       object lblUbicacionDB: TLabel
         Left = 13
         Height = 43
-        Top = 255
-        Width = 91
+        Top = 322
+        Width = 227
         AutoSize = False
         Font.Color = clRed
         Font.Height = -32
@@ -2861,7 +2860,7 @@ object fUbicaciones: TfUbicaciones
       object lblUbicacion: TLabel
         Left = 13
         Height = 15
-        Top = 232
+        Top = 306
         Width = 53
         Caption = 'Ubicación'
         ParentFont = False
@@ -2869,7 +2868,7 @@ object fUbicaciones: TfUbicaciones
       object lblCantidad: TLabel
         Left = 13
         Height = 15
-        Top = 319
+        Top = 386
         Width = 48
         Caption = 'Cantidad'
         ParentFont = False
@@ -2877,8 +2876,8 @@ object fUbicaciones: TfUbicaciones
       object lblCantidadDB: TLabel
         Left = 13
         Height = 33
-        Top = 337
-        Width = 165
+        Top = 405
+        Width = 179
         AutoSize = False
         Font.Height = -24
         Font.Style = [fsBold]
@@ -3282,7 +3281,7 @@ object fUbicaciones: TfUbicaciones
       object lblAutor: TLabel
         Left = 13
         Height = 15
-        Top = 92
+        Top = 234
         Width = 30
         Caption = 'Autor'
         ParentFont = False
@@ -3290,13 +3289,51 @@ object fUbicaciones: TfUbicaciones
       object lblAutorDB: TLabel
         Left = 13
         Height = 33
-        Top = 109
+        Top = 249
         Width = 571
         AutoSize = False
         Font.Height = -24
         Font.Style = [fsBold]
         ParentFont = False
         OnClick = lblAutorDBClick
+      end
+      object lblSubitulo: TLabel
+        Left = 13
+        Height = 15
+        Top = 154
+        Width = 51
+        Caption = 'Sub título'
+        ParentFont = False
+      end
+      object lblSubtituloDB: TLabel
+        Left = 13
+        Height = 33
+        Top = 176
+        Width = 571
+        AutoSize = False
+        Font.Height = -24
+        Font.Style = [fsBold]
+        ParentFont = False
+        OnClick = lblTituloDBClick
+      end
+      object lblPrecioDB: TLabel
+        Left = 419
+        Height = 33
+        Top = 405
+        Width = 165
+        AutoSize = False
+        Font.Color = clBlue
+        Font.Height = -24
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lblPrecio: TLabel
+        Left = 419
+        Height = 15
+        Top = 386
+        Width = 33
+        Caption = 'Precio'
+        ParentFont = False
       end
     end
     object tsBuscar: TFZVirtualPage
@@ -3318,6 +3355,7 @@ object fUbicaciones: TfUbicaciones
       Appearance.Color.HotTrack = False
       Appearance.Font.HotTrack = False
       Align = alClient
+      Visible = False
       TabOrder = 2
       object Rejilla: TDBGrid
         Left = 13
@@ -3334,22 +3372,23 @@ object fUbicaciones: TfUbicaciones
           end        
           item
             Title.Caption = 'Título'
-            Width = 600
+            Width = 500
             FieldName = 'titulo'
+            DisplayFormat = '###,##0.00 €'
           end        
           item
             Title.Caption = 'Ubicación'
-            Width = 60
+            Width = 130
             FieldName = 'ubicacion'
           end        
           item
             Title.Caption = 'Stock'
-            Width = 54
+            Width = 60
             FieldName = 'cantidad'
           end>
         DataSource = DS
         FixedCols = 0
-        Options = [dgTitles, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+        Options = [dgTitles, dgColLines, dgRowLines, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit, dgDisplayMemoText]
         ParentFont = False
         ReadOnly = True
         Scrollbars = ssAutoVertical
@@ -3434,11 +3473,11 @@ object fUbicaciones: TfUbicaciones
           ''
           ''
           ''
-          'Versión 4.0 - © Arturo Molina (amolinaj@gmail.com)'
+          'Versión 4.1 - © Arturo Molina (amolinaj@gmail.com)'
         )
         ParentFont = False
         ReadOnly = True
-        Rtf = '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}'#13#10'{\colortbl ;\red0\green0\blue0;\red255\green0\blue0;\red0\green0\blue255;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\uc1 '#13#10'\pard\cf1\f0\fs18 La tecla <\cf2\b F1\cf1\b0 > muestra este texto de ayuda.\par'#13#10'La tecla <\cf2\b F2\cf1\b0 > actualiza las bases de datos.\par'#13#10'La tecla <\cf2\b F5\cf1\b0 > muestra la pantalla de b\''fasqueda.\par'#13#10'La tecla <\cf2\b ESC\cf1\b0 > cierra el programa.\par'#13#10'\par'#13#10'Puedes usar el teclado o un lector de c\''f3digo de barras para introducir el ISBN del libro a localizar.\par'#13#10'\par'#13#10'Para mostrar las portadas de los libros es necesario que el sistema tenga acceso al servidor de \b Archivo\b0 , alojado en el almac\''e9n, desde donde se descargar\''e1n las im\''e1genes de los mismos. (Consultar con el almac\''e9n en caso de que no se tenga acceso al \b Archivo\b0 ).\par'#13#10'\par'#13#10'Si el t\''edtulo o autor es muy largo, haciendo \b click\b0  con el rat\''f3n sobre la etiqueta del t\''edtulo o autor se mostrar\''e1 completo.\par'#13#10'\par'#13#10'La pantalla de b\''fasquedas permite localizar un libro por su t\''edtulo o autor.\par'#13#10'No es necesario el uso de may\''fasculas pero s\''ed el de tildes. No es necesario introducir el t\''edtulo o autor completo.\par'#13#10'\par'#13#10'En la pantalla de b\''fasquedas, pulsando con el rat\''f3n en cualquier libro de la lista se muestran los datos del libro seleccionado.\par'#13#10'\par'#13#10'Para actualizar el archivo de libros es necesario que el sistema tenga acceso al servidor de \b Archivo\b0 , alojado en el almac\''e9n, desde donde se descargar\''e1n las tablas de datos actualizadas. (Consultar con el almac\''e9n en caso de que no se tenga acceso al \b Archivo\b0 ).\par'#13#10'\par'#13#10'Doble click sobre el logotipo de la universidad abre la p\''e1gina web www.ua.es\par'#13#10'Doble click sobre el logotipo de publicaciones abre la p\''e1gina web publicaciones.ua.es\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\cf3 Versi\''f3n 4.0 - \''a9 Arturo Molina (amolinaj@gmail.com)\par'#13#10'}'#13#10#0
+        Rtf = '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang3082{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}'#13#10'{\colortbl ;\red0\green0\blue0;\red255\green0\blue0;\red0\green0\blue255;}'#13#10'{\*\generator Riched20 10.0.19041}\viewkind4\uc1 '#13#10'\pard\cf1\f0\fs18 La tecla <\cf2\b F1\cf1\b0 > muestra este texto de ayuda.\par'#13#10'La tecla <\cf2\b F2\cf1\b0 > actualiza las bases de datos.\par'#13#10'La tecla <\cf2\b F5\cf1\b0 > muestra la pantalla de b\''fasqueda.\par'#13#10'La tecla <\cf2\b ESC\cf1\b0 > cierra el programa.\par'#13#10'\par'#13#10'Puedes usar el teclado o un lector de c\''f3digo de barras para introducir el ISBN del libro a localizar.\par'#13#10'\par'#13#10'Para mostrar las portadas de los libros es necesario que el sistema tenga acceso al servidor de \b Archivo\b0 , alojado en el almac\''e9n, desde donde se descargar\''e1n las im\''e1genes de los mismos. (Consultar con el almac\''e9n en caso de que no se tenga acceso al \b Archivo\b0 ).\par'#13#10'\par'#13#10'Si el t\''edtulo o autor es muy largo, haciendo \b click\b0  con el rat\''f3n sobre la etiqueta del t\''edtulo o autor se mostrar\''e1 completo.\par'#13#10'\par'#13#10'La pantalla de b\''fasquedas permite localizar un libro por su t\''edtulo o autor.\par'#13#10'No es necesario el uso de may\''fasculas pero s\''ed el de tildes. No es necesario introducir el t\''edtulo o autor completo.\par'#13#10'\par'#13#10'En la pantalla de b\''fasquedas, pulsando con el rat\''f3n en cualquier libro de la lista se muestran los datos del libro seleccionado.\par'#13#10'\par'#13#10'Para actualizar el archivo de libros es necesario que el sistema tenga acceso al servidor de \b Archivo\b0 , alojado en el almac\''e9n, desde donde se descargar\''e1n las tablas de datos actualizadas. (Consultar con el almac\''e9n en caso de que no se tenga acceso al \b Archivo\b0 ).\par'#13#10'\par'#13#10'Doble click sobre el logotipo de la universidad abre la p\''e1gina web www.ua.es\par'#13#10'Doble click sobre el logotipo de publicaciones abre la p\''e1gina web publicaciones.ua.es\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\par'#13#10'\cf3 Versi\''f3n 4.1 - \''a9 Arturo Molina (amolinaj@gmail.com)\par'#13#10'}'#13#10#0
         TabOrder = 0
         ZoomFactor = 1
       end
@@ -4092,7 +4131,9 @@ object fUbicaciones: TfUbicaciones
     ControlsCodePage = cCP_UTF8
     Properties.Strings = (
       'AutoEncodeStrings='
+      'RawStringEncoding=DB_CP'
     )
+    Connected = True
     SQLHourGlass = True
     Port = 0
     Protocol = 'sqlite'
@@ -4106,7 +4147,7 @@ object fUbicaciones: TfUbicaciones
   end
   object Abrir: TOpenDialog
     DefaultExt = '.xls'
-    Filter = 'Hoja de cálculo de Microsoft Excel 97-2003|*.xls'
+    Filter = 'Hoja de Excel 97-2003|*.xls'
     Left = 858
     Top = 100
   end

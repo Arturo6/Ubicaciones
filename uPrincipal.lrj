@@ -1,5 +1,5 @@
 {"version":1,"strings":[
-{"hash":189986032,"name":"tfubicaciones.caption","sourcebytes":[85,98,105,99,97,99,105,111,110,101,115,32,52,46,48],"value":"Ubicaciones 4.0"},
+{"hash":189986033,"name":"tfubicaciones.caption","sourcebytes":[85,98,105,99,97,99,105,111,110,101,115,32,52,46,49],"value":"Ubicaciones 4.1"},
 {"hash":178871982,"name":"tfubicaciones.btncerrar.hint","sourcebytes":[67,101,114,114,97,114,32,101,108,32,112,114,111,103,114,97,109,97,32,60,69,83,67,62],"value":"Cerrar el programa <ESC>"},
 {"hash":178034850,"name":"tfubicaciones.btncerrar.caption","sourcebytes":[38,67,101,114,114,97,114],"value":"&Cerrar"},
 {"hash":245279422,"name":"tfubicaciones.btnbuscar.hint","sourcebytes":[66,117,115,99,97,114,32,117,110,32,116,195,173,116,117,108,111,32,60,70,53,62],"value":"Buscar un t\u00EDtulo <F5>"},
@@ -14,6 +14,8 @@
 {"hash":159245934,"name":"tfubicaciones.lblubicacion.caption","sourcebytes":[85,98,105,99,97,99,105,195,179,110],"value":"Ubicaci\u00F3n"},
 {"hash":140181220,"name":"tfubicaciones.lblcantidad.caption","sourcebytes":[67,97,110,116,105,100,97,100],"value":"Cantidad"},
 {"hash":4770658,"name":"tfubicaciones.lblautor.caption","sourcebytes":[65,117,116,111,114],"value":"Autor"},
+{"hash":10358959,"name":"tfubicaciones.lblsubitulo.caption","sourcebytes":[83,117,98,32,116,195,173,116,117,108,111],"value":"Sub t\u00EDtulo"},
+{"hash":91798015,"name":"tfubicaciones.lblprecio.caption","sourcebytes":[80,114,101,99,105,111],"value":"Precio"},
 {"hash":321390,"name":"tfubicaciones.rejilla.columns[0].title.caption","sourcebytes":[73,83,66,78],"value":"ISBN"},
 {"hash":14990415,"name":"tfubicaciones.rejilla.columns[1].title.caption","sourcebytes":[84,195,173,116,117,108,111],"value":"T\u00EDtulo"},
 {"hash":159245934,"name":"tfubicaciones.rejilla.columns[2].title.caption","sourcebytes":[85,98,105,99,97,99,105,195,179,110],"value":"Ubicaci\u00F3n"},
